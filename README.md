@@ -35,11 +35,11 @@ index "Nuovo Soggettario" SKOS Subjects into Redis Sorted Sets
 		$ redis-cli info | grep used_memory_human
 		used_memory_human:9.57M
 		
-	
 		$ redis-cli --raw
+		
 		127.0.0.1:6379> ZRANGEBYLEX autocomplete [archiv "[archiv\xff" LIMIT 0 5
-		archivi capitolari:{"term":"Archivi capitolari", "code":"http://purl.org/bncf/tid/17165"}
-		archivi comunali:{"term":"Archivi comunali", "code":"http://purl.org/bncf/tid/32025"}
-		archivi correnti:{"term":"Archivi correnti", "code":"http://purl.org/bncf/tid/52282"}
-		archivi di autorità di nomi e titoli:{"term":"Archivi di autorità di nomi e titoli", "code":"http://purl.org/bncf/tid/2260"}
-		archivi di autorità:{"term":"Archivi di autorità", "code":"http://purl.org/bncf/tid/2261"}		
+		archivi capitolari:{"label":"Archivi capitolari", "id":"http://purl.org/bncf/tid/17165"}
+		archivi comunali:{"label":"Archivi comunali", "id":"http://purl.org/bncf/tid/32025"}
+		archivi correnti:{"label":"Archivi correnti", "id":"http://purl.org/bncf/tid/52282"}
+		archivi di autorità di nomi e titoli:{"label":"Archivi di autorità di nomi e titoli", 	"id":"http://purl.org/bncf/tid/2260"}
+		archivi di autorità:{"label":"Archivi di autorità", "id":"http://purl.org/bncf/tid/2261"}
